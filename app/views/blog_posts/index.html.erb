@@ -1,0 +1,8 @@
+
+
+<% @blog_posts.each do |blog_post| %>
+  <div>
+    <p><%=  link_to blog_post.title, blog_post_path(blog_post) %></p>
+  </div>
+  <hr>
+<% end %>

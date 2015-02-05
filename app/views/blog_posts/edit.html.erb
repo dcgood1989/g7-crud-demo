@@ -1,0 +1,18 @@
+<h1> Edit Blog Post <h1>
+
+<%= form_for @blog_post do |f| %>
+  <%= f.label :title %>
+  <%= f.text_field :title %>
+  <br>
+
+  <%= f.label :author %>
+  <%= f.text_field :author %>
+  <br>
+
+  <%= f.label :content %>
+  <%= f.text_area :content %>
+  <br>
+
+  <%= f.submit "Update blog post!!!!!!" %>
+
+<% end %>

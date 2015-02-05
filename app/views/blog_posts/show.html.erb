@@ -1,0 +1,17 @@
+
+<%= @blog_post.title %>
+
+<br/>
+
+<%= @blog_post.author %>
+
+<br/>
+
+<%= @blog_post.content %>
+
+<br/>
+
+
+<% link_to "New", new_blog_post_path %>
+<%= link_to 'Edit', edit_blog_post_path(@blog_post) %>
+<%= link_to 'Delete', blog_post_path(@blog_post), method: :delete, data: {confirm: "really? for rails?"} %>
